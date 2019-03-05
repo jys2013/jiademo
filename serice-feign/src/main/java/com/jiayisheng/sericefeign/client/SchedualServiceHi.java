@@ -5,7 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value="sevice-hi")
+@FeignClient(value = "service-hi")
 public interface SchedualServiceHi {
-    @RequestMapping(value="/hi",method = RequestMethod.POST)
-    String sayHiFromClientOne(@RequestParam(value = "name") String name);}
+    @RequestMapping(value = "/hi",method = RequestMethod.GET)
+    String sayHiFromClientOne(@RequestParam(value = "name") String name);
+}
