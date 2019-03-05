@@ -7,6 +7,6 @@ server:
 spring:
     application:
         name: service-feign
-sevice-hi:
-    ribbon:
-        listOfServers: http://localhost:8762
+feign:
+    hystrix:
+        enabled: true
